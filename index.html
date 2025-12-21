@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <header class="hero">
+  <h1>Víctor Calabuig Monllor</h1>
+  <p>Programador Industrial</p>
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<section id="about" class="section">
+  <h2>Sobre mí</h2>
+  <p class="about-text">
+    Hola, soy <strong>Víctor</strong>. Me dedico a la programación industrial y los proyectos llave en mano.
+  </p>
+</section>
+
+<section id="projects" class="section dark">
+  <h2>Proyectos</h2>
+  <div class="projects">
+
+    <!-- Proyecto 1 -->
+    <div class="card">
+      <h3>Obeikan Cells</h3>
+      <p>
+        Desarrollo de una celda automatizada compuesta por dos robots integrados con sistemas de visión artificial. El proyecto abarcó desde la posibilidad de poder trabajar con 150 referencias diferentes y su paletizado, hasta el paletizado final, optimizando los tiempos de ciclo y la manipulación del producto.
+      </p>
+      <button class="open-modal" data-modal="modal1">Ver proyecto</button>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="card">
+      <h3>Arkite Data Center HRU</h3>
+      <p>
+Desarrollo de una línea de producción compuesta por tres estaciones de trabajo interconectadas para el montaje de productos complejos. Dos estaciones de subensamblaje y una estación de integración final con test eléctrico funcional en entorno protegido.
+      </p>
+      <button class="open-modal" data-modal="modal2">Ver proyecto</button>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="card">
+      <h3>HIDROGEN FLUSHING</h3>
+      <p>
+Desarrollo del sistema de control para una estación de alta presión dedicada al llenado de tanques de Hidrógeno y procesos de purga/limpieza con Nitrógeno en un entorno ATEX. El sistema incorpora una gestión de recetas que permite configurar los ciclos de trabajo y los rangos de presión (mínimos y máximos) para cada operación.
+      </p>
+      <button class="open-modal" data-modal="modal3">Ver proyecto</button>
+    </div>
+
+    <!-- Proyecto 4 -->
+    <div class="card">
+      <h3>Banco de testeo etapas de potencia HEM3</h3>
+      <p>
+Desarrollo del sistema de control para bancos de testeo de inversores integrados en una línea de alta tensión. La solución se basa en la comunicación mediante diversos protocolos industriales para la adquisición de medidas y la monitorización de parámetros críticos. El sistema permite verificar el correcto funcionamiento de las etapas y validar los estándares de calidad antes de su salida de línea.
+      </p>
+      <button class="open-modal" data-modal="modal4">Ver proyecto</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODALES -->
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Obeikan Cells</h3>
+
+    <h4>Elementos usados</h4>
+    <ul>
+      <li>PLC: Beckhoff CX-5020 </li>
+      <li>Protocolos: Ethercat</li>
+      <li>Robots: KUKA KRC4</li>
+      <li>Cámaras de visión: Keyens</li>
+      <li>SMC:Servomotor, EX600, ITV,</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Arkite Data Center HRU</h3>
+    <h4>Elementos usados</h4>
+    <ul>
+      <li>PLC: Beckhoff C6015, S7-1500</li>
+      <li>Protocolos: Pofinet, EtherNet/IP, 
+          Modbus RTU, ADS.</li>
+      <li>Cámaras de visión: Arkite</li>
+      <li>Elementos de trazabilidad: Lectoras                 Dataman, Impresora Toshiba</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>HIDROGEN FLUSHING</h3>
+
+    <h4>Elementos usados</h4>
+    <ul>
+      <li>PLC: Compact Guardalogix 5380</li>
+      <li>Protocolos: Ethernet IP, Modbus RTU,               Modbus TCP/IP</li>
+      <li>Válvulas de alta presión Swagelok</li>
+      <li>Flow Controller y Meters: Alicat y                 Bronkhorst</li>
+      <li>Analizadores de gas ABB</li>
+      <li>Detectores de llama, hidrógeno y                   oxígeno</li>
+      <li>Elementos de seguridad: Escáner y radares           de seguridad SICK</li>
+      <li>Entorno ATEX</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Banco de testeo etapas de potencia HEM3</h3>
+    <h4>Elementos usados</h4>
+    <ul>
+      <li>PLC: Beckhoff CX9020</li>
+      <li>Protocolos: Ethercat, Modbus TCP/IP,               Modbus RTU</li>
+      <li>Elementos de trazabilidad: Lectoras                 Datalogic</li>
+      <li>Elementos de medición: SATEC,                       CIRCUTOR</li>
+
+    </ul>
+  </div>
+</div>
+
+<section id="contact" class="section">
+  <h2>Contacto</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu email" required>
+    <textarea placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 · Víctor Calabuig Monllor
+</footer>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
